@@ -11,8 +11,10 @@ venv/
 *.sqlite
 
 # ML Model
+*.pkl
 backend/model/*.pkl
 backend/model/*.json
+backend/backend/
 
 # Node
 frontend/node_modules/
