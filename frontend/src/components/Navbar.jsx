@@ -5,6 +5,7 @@ const links = [
   { to: '/',             label: 'Dashboard',    icon: BarChart3   },
   { to: '/transactions', label: 'Transactions', icon: List        },
   { to: '/audit',        label: 'Audit Log',    icon: ScrollText  },
+  { to: '/analyze',      label: 'Analyze',      icon: ShieldAlert },
 ]
 
 export default function Navbar() {

@@ -1,0 +1,15 @@
+{
+  "date": "2026-08-26",
+  "exported_at": "2026-08-26T19:11:24.758195",
+  "total_transactions": 220,
+  "total_audit_events": 230,
+  "flagged_fraud_count": 24,
+  "chargeback_letters_count": 7,
+  "total_volume_processed_inr": 9483744.78,
+  "total_volume_blocked_inr": 6499721.88,
+  "files": {
+    "audit_log": "C:\\Users\\Shashwat\\Desktop\\personal project\\fraudshield\\data\\logs\\2026-08-26\\audit_log.json",
+    "transactions": "C:\\Users\\Shashwat\\Desktop\\personal project\\fraudshield\\data\\logs\\2026-08-26\\transactions.json",
+    "chargeback_responses": "C:\\Users\\Shashwat\\Desktop\\personal project\\fraudshield\\data\\logs\\2026-08-26\\chargeback_responses.json"
+  }
+}

@@ -1,0 +1,2072 @@
+[
+  {
+    "id": 1,
+    "transaction_id": "TXN-2E3943A93D",
+    "action": "FLAGGED_FRAUD",
+    "reason": "Fraud score 99.99% exceeded threshold. Type: card_testing",
+    "confidence": 0.9999,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 11:41:32"
+  },
+  {
+    "id": 2,
+    "transaction_id": "TXN-B258DF321B",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.06% below threshold. Transaction approved.",
+    "confidence": 0.0006,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 11:41:32"
+  },
+  {
+    "id": 3,
+    "transaction_id": "TXN-4B2F904021",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.06% below threshold. Transaction approved.",
+    "confidence": 0.0006,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 11:41:32"
+  },
+  {
+    "id": 4,
+    "transaction_id": "TXN-8877C75314",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.06% below threshold. Transaction approved.",
+    "confidence": 0.0006,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 11:41:32"
+  },
+  {
+    "id": 5,
+    "transaction_id": "TXN-E41DCAB30E",
+    "action": "FLAGGED_FRAUD",
+    "reason": "Fraud score 99.99% exceeded threshold. Type: card_testing",
+    "confidence": 0.9999,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 11:41:32"
+  },
+  {
+    "id": 6,
+    "transaction_id": "TXN-B9A340FD78",
+    "action": "FLAGGED_FRAUD",
+    "reason": "Fraud score 99.99% exceeded threshold. Type: card_testing",
+    "confidence": 0.9999,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 11:41:32"
+  },
+  {
+    "id": 7,
+    "transaction_id": "TXN-3871C988D2",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.06% below threshold. Transaction approved.",
+    "confidence": 0.0006,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 11:41:32"
+  },
+  {
+    "id": 8,
+    "transaction_id": "TXN-3F89476EC0",
+    "action": "FLAGGED_FRAUD",
+    "reason": "Fraud score 99.99% exceeded threshold. Type: card_testing",
+    "confidence": 0.9999,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 11:41:32"
+  },
+  {
+    "id": 9,
+    "transaction_id": "TXN-2316BAF166",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.06% below threshold. Transaction approved.",
+    "confidence": 0.0006,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 11:41:32"
+  },
+  {
+    "id": 10,
+    "transaction_id": "TXN-0EFCF98513",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.06% below threshold. Transaction approved.",
+    "confidence": 0.0006,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 11:41:32"
+  },
+  {
+    "id": 11,
+    "transaction_id": "TXN-909C717C47",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.06% below threshold. Transaction approved.",
+    "confidence": 0.0006,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 11:41:32"
+  },
+  {
+    "id": 12,
+    "transaction_id": "TXN-BED32BB8FB",
+    "action": "FLAGGED_FRAUD",
+    "reason": "Fraud score 99.99% exceeded threshold. Type: card_testing",
+    "confidence": 0.9999,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 11:41:32"
+  },
+  {
+    "id": 13,
+    "transaction_id": "TXN-1E16944CC6",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.06% below threshold. Transaction approved.",
+    "confidence": 0.0006,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 11:41:32"
+  },
+  {
+    "id": 14,
+    "transaction_id": "TXN-98ED5386DD",
+    "action": "FLAGGED_FRAUD",
+    "reason": "Fraud score 99.99% exceeded threshold. Type: card_testing",
+    "confidence": 0.9999,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 11:41:32"
+  },
+  {
+    "id": 15,
+    "transaction_id": "TXN-D74158E0FE",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.06% below threshold. Transaction approved.",
+    "confidence": 0.0006,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 11:41:32"
+  },
+  {
+    "id": 16,
+    "transaction_id": "TXN-346D0E92BE",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.06% below threshold. Transaction approved.",
+    "confidence": 0.0006,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 11:41:32"
+  },
+  {
+    "id": 17,
+    "transaction_id": "TXN-E7D28CBA15",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.06% below threshold. Transaction approved.",
+    "confidence": 0.0006,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 11:41:32"
+  },
+  {
+    "id": 18,
+    "transaction_id": "TXN-21CC4A9644",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.06% below threshold. Transaction approved.",
+    "confidence": 0.0006,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 11:41:32"
+  },
+  {
+    "id": 19,
+    "transaction_id": "TXN-AAA85D1F5C",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.06% below threshold. Transaction approved.",
+    "confidence": 0.0006,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 11:41:32"
+  },
+  {
+    "id": 20,
+    "transaction_id": "TXN-D3F8B8B72D",
+    "action": "FLAGGED_FRAUD",
+    "reason": "Fraud score 99.99% exceeded threshold. Type: card_testing",
+    "confidence": 0.9999,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 11:41:32"
+  },
+  {
+    "id": 21,
+    "transaction_id": "TXN-7200ADA9B6",
+    "action": "FLAGGED_FRAUD",
+    "reason": "Fraud score 99.99% exceeded threshold. Type: card_testing",
+    "confidence": 0.9999,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 11:41:32"
+  },
+  {
+    "id": 22,
+    "transaction_id": "TXN-06FD5C944F",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.06% below threshold. Transaction approved.",
+    "confidence": 0.0006,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 11:41:32"
+  },
+  {
+    "id": 23,
+    "transaction_id": "TXN-68BA644C24",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.06% below threshold. Transaction approved.",
+    "confidence": 0.0006,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 11:41:32"
+  },
+  {
+    "id": 24,
+    "transaction_id": "TXN-8513399D75",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.06% below threshold. Transaction approved.",
+    "confidence": 0.0006,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 11:41:32"
+  },
+  {
+    "id": 25,
+    "transaction_id": "TXN-72724D545D",
+    "action": "FLAGGED_FRAUD",
+    "reason": "Fraud score 99.99% exceeded threshold. Type: card_testing",
+    "confidence": 0.9999,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 11:41:32"
+  },
+  {
+    "id": 26,
+    "transaction_id": "TXN-804D9BC42A",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.06% below threshold. Transaction approved.",
+    "confidence": 0.0006,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 11:41:32"
+  },
+  {
+    "id": 27,
+    "transaction_id": "TXN-24A4797082",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.06% below threshold. Transaction approved.",
+    "confidence": 0.0006,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 11:41:33"
+  },
+  {
+    "id": 28,
+    "transaction_id": "TXN-8E6BDC112F",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.06% below threshold. Transaction approved.",
+    "confidence": 0.0006,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 11:41:33"
+  },
+  {
+    "id": 29,
+    "transaction_id": "TXN-3C5104B975",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.06% below threshold. Transaction approved.",
+    "confidence": 0.0006,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 11:41:33"
+  },
+  {
+    "id": 30,
+    "transaction_id": "TXN-956801CC87",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.06% below threshold. Transaction approved.",
+    "confidence": 0.0006,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 11:41:33"
+  },
+  {
+    "id": 31,
+    "transaction_id": "TXN-D488B7CBF1",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.06% below threshold. Transaction approved.",
+    "confidence": 0.0006,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 11:41:33"
+  },
+  {
+    "id": 32,
+    "transaction_id": "TXN-B5F555747F",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.06% below threshold. Transaction approved.",
+    "confidence": 0.0006,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 11:41:33"
+  },
+  {
+    "id": 33,
+    "transaction_id": "TXN-E70BB6769D",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.06% below threshold. Transaction approved.",
+    "confidence": 0.0006,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 11:41:33"
+  },
+  {
+    "id": 34,
+    "transaction_id": "TXN-C31C91ED66",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.06% below threshold. Transaction approved.",
+    "confidence": 0.0006,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 11:41:33"
+  },
+  {
+    "id": 35,
+    "transaction_id": "TXN-BC209BC68E",
+    "action": "FLAGGED_FRAUD",
+    "reason": "Fraud score 99.99% exceeded threshold. Type: card_testing",
+    "confidence": 0.9999,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 11:41:33"
+  },
+  {
+    "id": 36,
+    "transaction_id": "TXN-852B53F1A5",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.06% below threshold. Transaction approved.",
+    "confidence": 0.0006,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 11:41:33"
+  },
+  {
+    "id": 37,
+    "transaction_id": "TXN-8CFDCCDB7D",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.06% below threshold. Transaction approved.",
+    "confidence": 0.0006,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 11:41:33"
+  },
+  {
+    "id": 38,
+    "transaction_id": "TXN-DB60642309",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.06% below threshold. Transaction approved.",
+    "confidence": 0.0006,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 11:41:33"
+  },
+  {
+    "id": 39,
+    "transaction_id": "TXN-5DB8985584",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.06% below threshold. Transaction approved.",
+    "confidence": 0.0006,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 11:41:33"
+  },
+  {
+    "id": 40,
+    "transaction_id": "TXN-28744D4D62",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.06% below threshold. Transaction approved.",
+    "confidence": 0.0006,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 11:41:33"
+  },
+  {
+    "id": 41,
+    "transaction_id": "TXN-ADBE260E68",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.06% below threshold. Transaction approved.",
+    "confidence": 0.0006,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 11:41:33"
+  },
+  {
+    "id": 42,
+    "transaction_id": "TXN-D5DE2ECA04",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.06% below threshold. Transaction approved.",
+    "confidence": 0.0006,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 11:41:33"
+  },
+  {
+    "id": 43,
+    "transaction_id": "TXN-7ED8920470",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.06% below threshold. Transaction approved.",
+    "confidence": 0.0006,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 11:41:33"
+  },
+  {
+    "id": 44,
+    "transaction_id": "TXN-3678B031E7",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.06% below threshold. Transaction approved.",
+    "confidence": 0.0006,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 11:41:33"
+  },
+  {
+    "id": 45,
+    "transaction_id": "TXN-9DCF43474A",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.06% below threshold. Transaction approved.",
+    "confidence": 0.0006,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 11:41:33"
+  },
+  {
+    "id": 46,
+    "transaction_id": "TXN-AED94E383B",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.06% below threshold. Transaction approved.",
+    "confidence": 0.0006,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 11:41:33"
+  },
+  {
+    "id": 47,
+    "transaction_id": "TXN-6894685862",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.06% below threshold. Transaction approved.",
+    "confidence": 0.0006,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 11:41:33"
+  },
+  {
+    "id": 48,
+    "transaction_id": "TXN-96D7906CD6",
+    "action": "FLAGGED_FRAUD",
+    "reason": "Fraud score 99.99% exceeded threshold. Type: card_testing",
+    "confidence": 0.9999,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 11:41:33"
+  },
+  {
+    "id": 49,
+    "transaction_id": "TXN-33757F2566",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.06% below threshold. Transaction approved.",
+    "confidence": 0.0006,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 11:41:33"
+  },
+  {
+    "id": 50,
+    "transaction_id": "TXN-3D6ED25A6A",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.06% below threshold. Transaction approved.",
+    "confidence": 0.0006,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 11:41:33"
+  },
+  {
+    "id": 51,
+    "transaction_id": "SYSTEM",
+    "action": "MODEL_RETRAINED",
+    "reason": "Model retrained. Precision: 1.0 Recall: 1.0",
+    "confidence": null,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 11:43:13"
+  },
+  {
+    "id": 52,
+    "transaction_id": "TXN-E88998AB2D",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.06% below threshold. Transaction approved.",
+    "confidence": 0.0006,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 11:54:16"
+  },
+  {
+    "id": 53,
+    "transaction_id": "TXN-5700EA0686",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.06% below threshold. Transaction approved.",
+    "confidence": 0.0006,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 11:54:16"
+  },
+  {
+    "id": 54,
+    "transaction_id": "TXN-029BBCA817",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.06% below threshold. Transaction approved.",
+    "confidence": 0.0006,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 11:54:16"
+  },
+  {
+    "id": 55,
+    "transaction_id": "TXN-9DB8805B5C",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.06% below threshold. Transaction approved.",
+    "confidence": 0.0006,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 11:54:16"
+  },
+  {
+    "id": 56,
+    "transaction_id": "TXN-3990191843",
+    "action": "FLAGGED_FRAUD",
+    "reason": "Fraud score 99.99% exceeded threshold. Type: card_testing",
+    "confidence": 0.9999,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 11:54:16"
+  },
+  {
+    "id": 57,
+    "transaction_id": "TXN-03A3F4ED04",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.06% below threshold. Transaction approved.",
+    "confidence": 0.0006,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 11:54:16"
+  },
+  {
+    "id": 58,
+    "transaction_id": "TXN-FD17FFF8D6",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.06% below threshold. Transaction approved.",
+    "confidence": 0.0006,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 11:54:16"
+  },
+  {
+    "id": 59,
+    "transaction_id": "TXN-87433EC4E8",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.06% below threshold. Transaction approved.",
+    "confidence": 0.0006,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 11:54:16"
+  },
+  {
+    "id": 60,
+    "transaction_id": "TXN-45910AED86",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.06% below threshold. Transaction approved.",
+    "confidence": 0.0006,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 11:54:16"
+  },
+  {
+    "id": 61,
+    "transaction_id": "TXN-698EFEFD98",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.06% below threshold. Transaction approved.",
+    "confidence": 0.0006,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 11:54:16"
+  },
+  {
+    "id": 62,
+    "transaction_id": "TXN-728F9E5BB1",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.06% below threshold. Transaction approved.",
+    "confidence": 0.0006,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 11:54:16"
+  },
+  {
+    "id": 63,
+    "transaction_id": "TXN-F3B140A017",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.06% below threshold. Transaction approved.",
+    "confidence": 0.0006,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 11:54:16"
+  },
+  {
+    "id": 64,
+    "transaction_id": "TXN-602B3A87F5",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.06% below threshold. Transaction approved.",
+    "confidence": 0.0006,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 11:54:16"
+  },
+  {
+    "id": 65,
+    "transaction_id": "TXN-AB3F43C4E2",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.06% below threshold. Transaction approved.",
+    "confidence": 0.0006,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 11:54:16"
+  },
+  {
+    "id": 66,
+    "transaction_id": "TXN-DE3A5A0716",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.06% below threshold. Transaction approved.",
+    "confidence": 0.0006,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 11:54:16"
+  },
+  {
+    "id": 67,
+    "transaction_id": "TXN-260759FE58",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.06% below threshold. Transaction approved.",
+    "confidence": 0.0006,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 11:54:16"
+  },
+  {
+    "id": 68,
+    "transaction_id": "TXN-808B21F37F",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.06% below threshold. Transaction approved.",
+    "confidence": 0.0006,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 11:54:16"
+  },
+  {
+    "id": 69,
+    "transaction_id": "TXN-43E1A3AD8D",
+    "action": "FLAGGED_FRAUD",
+    "reason": "Fraud score 99.99% exceeded threshold. Type: card_testing",
+    "confidence": 0.9999,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 11:54:16"
+  },
+  {
+    "id": 70,
+    "transaction_id": "TXN-9BA526E96A",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.06% below threshold. Transaction approved.",
+    "confidence": 0.0006,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 11:54:16"
+  },
+  {
+    "id": 71,
+    "transaction_id": "TXN-DE8E58BCF7",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.06% below threshold. Transaction approved.",
+    "confidence": 0.0006,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 11:54:16"
+  },
+  {
+    "id": 72,
+    "transaction_id": "SYSTEM",
+    "action": "MODEL_RETRAINED",
+    "reason": "Model retrained. Precision: 1.0 Recall: 1.0",
+    "confidence": null,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 11:55:13"
+  },
+  {
+    "id": 73,
+    "transaction_id": "SYSTEM",
+    "action": "MODEL_RETRAINED",
+    "reason": "Model retrained. Precision: 0.7647 Recall: 0.9286",
+    "confidence": null,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 11:59:57"
+  },
+  {
+    "id": 74,
+    "transaction_id": "TXN-F33190D9E9",
+    "action": "FLAGGED_FRAUD",
+    "reason": "Fraud score 100.00% exceeded threshold. Type: card_testing",
+    "confidence": 1.0,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 12:06:24"
+  },
+  {
+    "id": 75,
+    "transaction_id": "TXN-7F9A8C8A31",
+    "action": "FLAGGED_FRAUD",
+    "reason": "Fraud score 100.00% exceeded threshold. Type: card_testing",
+    "confidence": 1.0,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 12:06:24"
+  },
+  {
+    "id": 76,
+    "transaction_id": "TXN-DBFD1F34B0",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.05% below threshold. Transaction approved.",
+    "confidence": 0.0005,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 12:06:24"
+  },
+  {
+    "id": 77,
+    "transaction_id": "TXN-FB48AA6EC1",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.04% below threshold. Transaction approved.",
+    "confidence": 0.0004,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 12:06:24"
+  },
+  {
+    "id": 78,
+    "transaction_id": "TXN-74583586A0",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.07% below threshold. Transaction approved.",
+    "confidence": 0.0007,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 12:06:24"
+  },
+  {
+    "id": 79,
+    "transaction_id": "TXN-299F62CE0C",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.04% below threshold. Transaction approved.",
+    "confidence": 0.0004,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 12:06:24"
+  },
+  {
+    "id": 80,
+    "transaction_id": "TXN-EC398F2424",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.02% below threshold. Transaction approved.",
+    "confidence": 0.0002,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 12:06:24"
+  },
+  {
+    "id": 81,
+    "transaction_id": "TXN-76E79D0CC0",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.07% below threshold. Transaction approved.",
+    "confidence": 0.0007,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 12:06:24"
+  },
+  {
+    "id": 82,
+    "transaction_id": "TXN-2719CA2778",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.13% below threshold. Transaction approved.",
+    "confidence": 0.0013,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 12:06:24"
+  },
+  {
+    "id": 83,
+    "transaction_id": "TXN-27ACE161C1",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.03% below threshold. Transaction approved.",
+    "confidence": 0.0003,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 12:06:24"
+  },
+  {
+    "id": 84,
+    "transaction_id": "TXN-AA83F2CAFA",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.09% below threshold. Transaction approved.",
+    "confidence": 0.0009,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 12:06:24"
+  },
+  {
+    "id": 85,
+    "transaction_id": "TXN-4041FA8CD8",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.06% below threshold. Transaction approved.",
+    "confidence": 0.0006,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 12:06:24"
+  },
+  {
+    "id": 86,
+    "transaction_id": "TXN-07B5F23E68",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.07% below threshold. Transaction approved.",
+    "confidence": 0.0007,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 12:06:24"
+  },
+  {
+    "id": 87,
+    "transaction_id": "TXN-D00743D3FB",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.04% below threshold. Transaction approved.",
+    "confidence": 0.0004,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 12:06:24"
+  },
+  {
+    "id": 88,
+    "transaction_id": "TXN-BB0222F984",
+    "action": "FLAGGED_FRAUD",
+    "reason": "Fraud score 100.00% exceeded threshold. Type: card_testing",
+    "confidence": 1.0,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 12:06:24"
+  },
+  {
+    "id": 89,
+    "transaction_id": "TXN-9E3AC7EA94",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.06% below threshold. Transaction approved.",
+    "confidence": 0.0006,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 12:06:24"
+  },
+  {
+    "id": 90,
+    "transaction_id": "TXN-BDF994FFA6",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.04% below threshold. Transaction approved.",
+    "confidence": 0.0004,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 12:06:24"
+  },
+  {
+    "id": 91,
+    "transaction_id": "TXN-CFCBDC4EC1",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.05% below threshold. Transaction approved.",
+    "confidence": 0.0005,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 12:06:24"
+  },
+  {
+    "id": 92,
+    "transaction_id": "TXN-1639F86810",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.03% below threshold. Transaction approved.",
+    "confidence": 0.0003,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 12:06:24"
+  },
+  {
+    "id": 93,
+    "transaction_id": "TXN-8B3EBC09F5",
+    "action": "APPROVED",
+    "reason": "Fraud score 1.69% below threshold. Transaction approved.",
+    "confidence": 0.0169,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 12:06:24"
+  },
+  {
+    "id": 94,
+    "transaction_id": "TXN-74079E37FD",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.06% below threshold. Transaction approved.",
+    "confidence": 0.0006,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 12:06:24"
+  },
+  {
+    "id": 95,
+    "transaction_id": "TXN-571058B44A",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.08% below threshold. Transaction approved.",
+    "confidence": 0.0008,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 12:06:24"
+  },
+  {
+    "id": 96,
+    "transaction_id": "TXN-E2A24F8FD9",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.04% below threshold. Transaction approved.",
+    "confidence": 0.0004,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 12:06:24"
+  },
+  {
+    "id": 97,
+    "transaction_id": "TXN-2CB401CD3D",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.04% below threshold. Transaction approved.",
+    "confidence": 0.0004,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 12:06:24"
+  },
+  {
+    "id": 98,
+    "transaction_id": "TXN-ABDC05857C",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.16% below threshold. Transaction approved.",
+    "confidence": 0.0016,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 12:06:24"
+  },
+  {
+    "id": 99,
+    "transaction_id": "TXN-80CC7DC113",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.05% below threshold. Transaction approved.",
+    "confidence": 0.0005,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 12:06:25"
+  },
+  {
+    "id": 100,
+    "transaction_id": "TXN-F5A86F1E04",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.04% below threshold. Transaction approved.",
+    "confidence": 0.0004,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 12:06:25"
+  },
+  {
+    "id": 101,
+    "transaction_id": "TXN-120217BB8A",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.08% below threshold. Transaction approved.",
+    "confidence": 0.0008,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 12:06:25"
+  },
+  {
+    "id": 102,
+    "transaction_id": "TXN-57FD2644B0",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.18% below threshold. Transaction approved.",
+    "confidence": 0.0018,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 12:06:25"
+  },
+  {
+    "id": 103,
+    "transaction_id": "TXN-25F7358362",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.09% below threshold. Transaction approved.",
+    "confidence": 0.0009,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 12:06:25"
+  },
+  {
+    "id": 104,
+    "transaction_id": "TXN-8DC0FB73B3",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.05% below threshold. Transaction approved.",
+    "confidence": 0.0005,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 12:06:25"
+  },
+  {
+    "id": 105,
+    "transaction_id": "TXN-68552C84B7",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.03% below threshold. Transaction approved.",
+    "confidence": 0.0003,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 12:06:25"
+  },
+  {
+    "id": 106,
+    "transaction_id": "TXN-15FECAB5D3",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.16% below threshold. Transaction approved.",
+    "confidence": 0.0016,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 12:06:25"
+  },
+  {
+    "id": 107,
+    "transaction_id": "TXN-35213D5EEF",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.06% below threshold. Transaction approved.",
+    "confidence": 0.0006,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 12:06:25"
+  },
+  {
+    "id": 108,
+    "transaction_id": "TXN-BF17E75B37",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.04% below threshold. Transaction approved.",
+    "confidence": 0.0004,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 12:06:25"
+  },
+  {
+    "id": 109,
+    "transaction_id": "TXN-5C42AA9EAF",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.08% below threshold. Transaction approved.",
+    "confidence": 0.0008,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 12:06:25"
+  },
+  {
+    "id": 110,
+    "transaction_id": "TXN-ED047E812F",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.05% below threshold. Transaction approved.",
+    "confidence": 0.0005,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 12:06:25"
+  },
+  {
+    "id": 111,
+    "transaction_id": "TXN-784906396E",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.21% below threshold. Transaction approved.",
+    "confidence": 0.0021,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 12:06:25"
+  },
+  {
+    "id": 112,
+    "transaction_id": "TXN-4B4823AE40",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.04% below threshold. Transaction approved.",
+    "confidence": 0.0004,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 12:06:25"
+  },
+  {
+    "id": 113,
+    "transaction_id": "TXN-0D9FC40BBB",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.06% below threshold. Transaction approved.",
+    "confidence": 0.0006,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 12:06:25"
+  },
+  {
+    "id": 114,
+    "transaction_id": "TXN-B101C01E0D",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.05% below threshold. Transaction approved.",
+    "confidence": 0.0005,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 12:06:25"
+  },
+  {
+    "id": 115,
+    "transaction_id": "TXN-5FA9155EC3",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.03% below threshold. Transaction approved.",
+    "confidence": 0.0003,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 12:06:25"
+  },
+  {
+    "id": 116,
+    "transaction_id": "TXN-3A03B60593",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.03% below threshold. Transaction approved.",
+    "confidence": 0.0003,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 12:06:25"
+  },
+  {
+    "id": 117,
+    "transaction_id": "TXN-139DF8CDCD",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.02% below threshold. Transaction approved.",
+    "confidence": 0.0002,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 12:06:25"
+  },
+  {
+    "id": 118,
+    "transaction_id": "TXN-3284398CC3",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.07% below threshold. Transaction approved.",
+    "confidence": 0.0007,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 12:06:25"
+  },
+  {
+    "id": 119,
+    "transaction_id": "TXN-A7C6BD8F57",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.03% below threshold. Transaction approved.",
+    "confidence": 0.0003,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 12:06:25"
+  },
+  {
+    "id": 120,
+    "transaction_id": "TXN-EE1EC2DB9A",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.03% below threshold. Transaction approved.",
+    "confidence": 0.0003,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 12:06:25"
+  },
+  {
+    "id": 121,
+    "transaction_id": "TXN-FEA6AAFA71",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.03% below threshold. Transaction approved.",
+    "confidence": 0.0003,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 12:06:25"
+  },
+  {
+    "id": 122,
+    "transaction_id": "TXN-BABC40A757",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.04% below threshold. Transaction approved.",
+    "confidence": 0.0004,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 12:06:25"
+  },
+  {
+    "id": 123,
+    "transaction_id": "TXN-7DEDC58AFE",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.17% below threshold. Transaction approved.",
+    "confidence": 0.0017,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 12:06:25"
+  },
+  {
+    "id": 124,
+    "transaction_id": "TXN-272D66EBA7",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.05% below threshold. Transaction approved.",
+    "confidence": 0.0005,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 12:06:25"
+  },
+  {
+    "id": 125,
+    "transaction_id": "TXN-5419068D2E",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.05% below threshold. Transaction approved.",
+    "confidence": 0.0005,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 12:06:26"
+  },
+  {
+    "id": 126,
+    "transaction_id": "TXN-EEF8535E44",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.06% below threshold. Transaction approved.",
+    "confidence": 0.0006,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 12:06:26"
+  },
+  {
+    "id": 127,
+    "transaction_id": "TXN-28858A8DA5",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.05% below threshold. Transaction approved.",
+    "confidence": 0.0005,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 12:06:26"
+  },
+  {
+    "id": 128,
+    "transaction_id": "TXN-5813BF9BF0",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.04% below threshold. Transaction approved.",
+    "confidence": 0.0004,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 12:06:26"
+  },
+  {
+    "id": 129,
+    "transaction_id": "TXN-AA453A1F95",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.04% below threshold. Transaction approved.",
+    "confidence": 0.0004,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 12:06:26"
+  },
+  {
+    "id": 130,
+    "transaction_id": "TXN-6D61498B5E",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.17% below threshold. Transaction approved.",
+    "confidence": 0.0017,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 12:06:26"
+  },
+  {
+    "id": 131,
+    "transaction_id": "TXN-5F6DA4E939",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.74% below threshold. Transaction approved.",
+    "confidence": 0.0074,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 12:06:26"
+  },
+  {
+    "id": 132,
+    "transaction_id": "TXN-6B1C05979F",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.03% below threshold. Transaction approved.",
+    "confidence": 0.0003,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 12:06:26"
+  },
+  {
+    "id": 133,
+    "transaction_id": "TXN-A0FA52A35F",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.04% below threshold. Transaction approved.",
+    "confidence": 0.0004,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 12:06:26"
+  },
+  {
+    "id": 134,
+    "transaction_id": "TXN-77A6301426",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.04% below threshold. Transaction approved.",
+    "confidence": 0.0004,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 12:06:26"
+  },
+  {
+    "id": 135,
+    "transaction_id": "TXN-BD7D1E511D",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.20% below threshold. Transaction approved.",
+    "confidence": 0.002,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 12:06:26"
+  },
+  {
+    "id": 136,
+    "transaction_id": "TXN-4F15547242",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.04% below threshold. Transaction approved.",
+    "confidence": 0.0004,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 12:06:26"
+  },
+  {
+    "id": 137,
+    "transaction_id": "TXN-2DC5AAFA8C",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.03% below threshold. Transaction approved.",
+    "confidence": 0.0003,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 12:06:26"
+  },
+  {
+    "id": 138,
+    "transaction_id": "TXN-FE1A60BE09",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.04% below threshold. Transaction approved.",
+    "confidence": 0.0004,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 12:06:26"
+  },
+  {
+    "id": 139,
+    "transaction_id": "TXN-064CB8EC93",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.06% below threshold. Transaction approved.",
+    "confidence": 0.0006,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 12:06:26"
+  },
+  {
+    "id": 140,
+    "transaction_id": "TXN-4F65A7C221",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.03% below threshold. Transaction approved.",
+    "confidence": 0.0003,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 12:06:26"
+  },
+  {
+    "id": 141,
+    "transaction_id": "TXN-1857006AE6",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.02% below threshold. Transaction approved.",
+    "confidence": 0.0002,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 12:06:26"
+  },
+  {
+    "id": 142,
+    "transaction_id": "TXN-9E4C3BF4F5",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.08% below threshold. Transaction approved.",
+    "confidence": 0.0008,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 12:06:26"
+  },
+  {
+    "id": 143,
+    "transaction_id": "TXN-D2DDA86526",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.03% below threshold. Transaction approved.",
+    "confidence": 0.0003,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 12:06:26"
+  },
+  {
+    "id": 144,
+    "transaction_id": "TXN-CA0D27AD50",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.19% below threshold. Transaction approved.",
+    "confidence": 0.0019,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 12:06:26"
+  },
+  {
+    "id": 145,
+    "transaction_id": "TXN-E5776406F1",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.30% below threshold. Transaction approved.",
+    "confidence": 0.003,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 12:06:26"
+  },
+  {
+    "id": 146,
+    "transaction_id": "TXN-D5AE367AD0",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.57% below threshold. Transaction approved.",
+    "confidence": 0.0057,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 12:06:26"
+  },
+  {
+    "id": 147,
+    "transaction_id": "TXN-58CB0A2C87",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.16% below threshold. Transaction approved.",
+    "confidence": 0.0016,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 12:06:26"
+  },
+  {
+    "id": 148,
+    "transaction_id": "TXN-354D5A0D6B",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.03% below threshold. Transaction approved.",
+    "confidence": 0.0003,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 12:06:26"
+  },
+  {
+    "id": 149,
+    "transaction_id": "TXN-3EAEB34307",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.09% below threshold. Transaction approved.",
+    "confidence": 0.0009,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 12:06:27"
+  },
+  {
+    "id": 150,
+    "transaction_id": "TXN-69C370273B",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.04% below threshold. Transaction approved.",
+    "confidence": 0.0004,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 12:06:27"
+  },
+  {
+    "id": 151,
+    "transaction_id": "TXN-6971063764",
+    "action": "FLAGGED_FRAUD",
+    "reason": "Fraud score 99.99% exceeded threshold. Type: card_testing",
+    "confidence": 0.9999,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 12:06:27"
+  },
+  {
+    "id": 152,
+    "transaction_id": "TXN-6DBD6C85E7",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.07% below threshold. Transaction approved.",
+    "confidence": 0.0007,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 12:06:27"
+  },
+  {
+    "id": 153,
+    "transaction_id": "TXN-88B9F10DE9",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.03% below threshold. Transaction approved.",
+    "confidence": 0.0003,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 12:06:27"
+  },
+  {
+    "id": 154,
+    "transaction_id": "TXN-DEB3B07D77",
+    "action": "FLAGGED_FRAUD",
+    "reason": "Fraud score 100.00% exceeded threshold. Type: card_testing",
+    "confidence": 1.0,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 12:06:27"
+  },
+  {
+    "id": 155,
+    "transaction_id": "TXN-E3E4481DFD",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.07% below threshold. Transaction approved.",
+    "confidence": 0.0007,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 12:06:27"
+  },
+  {
+    "id": 156,
+    "transaction_id": "TXN-9E37D54B6C",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.04% below threshold. Transaction approved.",
+    "confidence": 0.0004,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 12:06:27"
+  },
+  {
+    "id": 157,
+    "transaction_id": "TXN-CC15500C18",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.97% below threshold. Transaction approved.",
+    "confidence": 0.0097,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 12:06:27"
+  },
+  {
+    "id": 158,
+    "transaction_id": "TXN-6CF4DF688B",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.10% below threshold. Transaction approved.",
+    "confidence": 0.001,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 12:06:27"
+  },
+  {
+    "id": 159,
+    "transaction_id": "TXN-31E1A75B5A",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.06% below threshold. Transaction approved.",
+    "confidence": 0.0006,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 12:06:27"
+  },
+  {
+    "id": 160,
+    "transaction_id": "TXN-4B63CA94DE",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.07% below threshold. Transaction approved.",
+    "confidence": 0.0007,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 12:06:27"
+  },
+  {
+    "id": 161,
+    "transaction_id": "TXN-FC1FB7B439",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.12% below threshold. Transaction approved.",
+    "confidence": 0.0012,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 12:06:27"
+  },
+  {
+    "id": 162,
+    "transaction_id": "TXN-95AD84EDCA",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.04% below threshold. Transaction approved.",
+    "confidence": 0.0004,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 12:06:27"
+  },
+  {
+    "id": 163,
+    "transaction_id": "TXN-CD8E6E4895",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.20% below threshold. Transaction approved.",
+    "confidence": 0.002,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 12:06:27"
+  },
+  {
+    "id": 164,
+    "transaction_id": "TXN-0E5BBF577E",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.06% below threshold. Transaction approved.",
+    "confidence": 0.0006,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 12:06:27"
+  },
+  {
+    "id": 165,
+    "transaction_id": "TXN-EB1417C685",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.04% below threshold. Transaction approved.",
+    "confidence": 0.0004,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 12:06:27"
+  },
+  {
+    "id": 166,
+    "transaction_id": "TXN-7DA77495C1",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.03% below threshold. Transaction approved.",
+    "confidence": 0.0003,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 12:06:27"
+  },
+  {
+    "id": 167,
+    "transaction_id": "TXN-A8963B30AB",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.02% below threshold. Transaction approved.",
+    "confidence": 0.0002,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 12:06:27"
+  },
+  {
+    "id": 168,
+    "transaction_id": "TXN-7ED0098227",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.09% below threshold. Transaction approved.",
+    "confidence": 0.0009,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 12:06:27"
+  },
+  {
+    "id": 169,
+    "transaction_id": "TXN-44840BC206",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.05% below threshold. Transaction approved.",
+    "confidence": 0.0005,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 12:06:27"
+  },
+  {
+    "id": 170,
+    "transaction_id": "TXN-C0F272C5F6",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.08% below threshold. Transaction approved.",
+    "confidence": 0.0008,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 12:06:27"
+  },
+  {
+    "id": 171,
+    "transaction_id": "TXN-53931DCBE7",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.04% below threshold. Transaction approved.",
+    "confidence": 0.0004,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 12:06:27"
+  },
+  {
+    "id": 172,
+    "transaction_id": "TXN-DADE2AAC45",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.04% below threshold. Transaction approved.",
+    "confidence": 0.0004,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 12:06:27"
+  },
+  {
+    "id": 173,
+    "transaction_id": "TXN-55D17CD8E3",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.23% below threshold. Transaction approved.",
+    "confidence": 0.0023,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 12:06:27"
+  },
+  {
+    "id": 174,
+    "transaction_id": "TXN-6971063764",
+    "action": "CHARGEBACK_GENERATED",
+    "reason": "Dispute letter generated for fraud type: card_testing",
+    "confidence": 0.9999,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 12:06:55"
+  },
+  {
+    "id": 175,
+    "transaction_id": "TXN-55F50FB23B",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.14% below threshold. Transaction approved.",
+    "confidence": 0.0014,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 13:41:18"
+  },
+  {
+    "id": 176,
+    "transaction_id": "TXN-0F623EBC72",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.16% below threshold. Transaction approved.",
+    "confidence": 0.0016,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 13:41:18"
+  },
+  {
+    "id": 177,
+    "transaction_id": "TXN-A22DD1AA8B",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.04% below threshold. Transaction approved.",
+    "confidence": 0.0004,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 13:41:18"
+  },
+  {
+    "id": 178,
+    "transaction_id": "TXN-71C987BA98",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.07% below threshold. Transaction approved.",
+    "confidence": 0.0007,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 13:41:18"
+  },
+  {
+    "id": 179,
+    "transaction_id": "TXN-3A19388272",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.08% below threshold. Transaction approved.",
+    "confidence": 0.0008,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 13:41:18"
+  },
+  {
+    "id": 180,
+    "transaction_id": "TXN-9D7D6D7A96",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.06% below threshold. Transaction approved.",
+    "confidence": 0.0006,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 13:41:18"
+  },
+  {
+    "id": 181,
+    "transaction_id": "TXN-7392278E98",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.03% below threshold. Transaction approved.",
+    "confidence": 0.0003,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 13:41:18"
+  },
+  {
+    "id": 182,
+    "transaction_id": "TXN-E9A77AE7BF",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.03% below threshold. Transaction approved.",
+    "confidence": 0.0003,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 13:41:18"
+  },
+  {
+    "id": 183,
+    "transaction_id": "TXN-27D3452B5B",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.04% below threshold. Transaction approved.",
+    "confidence": 0.0004,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 13:41:18"
+  },
+  {
+    "id": 184,
+    "transaction_id": "TXN-5A42B069DE",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.05% below threshold. Transaction approved.",
+    "confidence": 0.0005,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 13:41:18"
+  },
+  {
+    "id": 185,
+    "transaction_id": "TXN-991C7664A8",
+    "action": "FLAGGED_FRAUD",
+    "reason": "Fraud score 100.00% exceeded threshold. Type: card_testing",
+    "confidence": 1.0,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 13:41:18"
+  },
+  {
+    "id": 186,
+    "transaction_id": "TXN-1884198779",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.03% below threshold. Transaction approved.",
+    "confidence": 0.0003,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 13:41:18"
+  },
+  {
+    "id": 187,
+    "transaction_id": "TXN-349EF55FCD",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.03% below threshold. Transaction approved.",
+    "confidence": 0.0003,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 13:41:18"
+  },
+  {
+    "id": 188,
+    "transaction_id": "TXN-8781CB6D71",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.69% below threshold. Transaction approved.",
+    "confidence": 0.0069,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 13:41:18"
+  },
+  {
+    "id": 189,
+    "transaction_id": "TXN-01848B3871",
+    "action": "FLAGGED_FRAUD",
+    "reason": "Fraud score 100.00% exceeded threshold. Type: card_testing",
+    "confidence": 1.0,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 13:41:18"
+  },
+  {
+    "id": 190,
+    "transaction_id": "TXN-42AD8739FC",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.06% below threshold. Transaction approved.",
+    "confidence": 0.0006,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 13:41:18"
+  },
+  {
+    "id": 191,
+    "transaction_id": "TXN-393F54BA24",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.03% below threshold. Transaction approved.",
+    "confidence": 0.0003,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 13:41:18"
+  },
+  {
+    "id": 192,
+    "transaction_id": "TXN-28A31B74E6",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.03% below threshold. Transaction approved.",
+    "confidence": 0.0003,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 13:41:18"
+  },
+  {
+    "id": 193,
+    "transaction_id": "TXN-169E069751",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.03% below threshold. Transaction approved.",
+    "confidence": 0.0003,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 13:41:18"
+  },
+  {
+    "id": 194,
+    "transaction_id": "TXN-114C21E03D",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.05% below threshold. Transaction approved.",
+    "confidence": 0.0005,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 13:41:18"
+  },
+  {
+    "id": 195,
+    "transaction_id": "TXN-913058BB7F",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.09% below threshold. Transaction approved.",
+    "confidence": 0.0009,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 13:41:18"
+  },
+  {
+    "id": 196,
+    "transaction_id": "TXN-9D28240370",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.02% below threshold. Transaction approved.",
+    "confidence": 0.0002,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 13:41:18"
+  },
+  {
+    "id": 197,
+    "transaction_id": "TXN-C733D31B76",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.05% below threshold. Transaction approved.",
+    "confidence": 0.0005,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 13:41:18"
+  },
+  {
+    "id": 198,
+    "transaction_id": "TXN-0D56837152",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.04% below threshold. Transaction approved.",
+    "confidence": 0.0004,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 13:41:18"
+  },
+  {
+    "id": 199,
+    "transaction_id": "TXN-3676B7EDEF",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.05% below threshold. Transaction approved.",
+    "confidence": 0.0005,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 13:41:18"
+  },
+  {
+    "id": 200,
+    "transaction_id": "TXN-D1195E4835",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.06% below threshold. Transaction approved.",
+    "confidence": 0.0006,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 13:41:18"
+  },
+  {
+    "id": 201,
+    "transaction_id": "TXN-B9B3F2758A",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.08% below threshold. Transaction approved.",
+    "confidence": 0.0008,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 13:41:19"
+  },
+  {
+    "id": 202,
+    "transaction_id": "TXN-AEC7F267DC",
+    "action": "FLAGGED_FRAUD",
+    "reason": "Fraud score 99.99% exceeded threshold. Type: card_testing",
+    "confidence": 0.9999,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 13:41:19"
+  },
+  {
+    "id": 203,
+    "transaction_id": "TXN-99A6596CEC",
+    "action": "FLAGGED_FRAUD",
+    "reason": "Fraud score 100.00% exceeded threshold. Type: card_testing",
+    "confidence": 1.0,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 13:41:19"
+  },
+  {
+    "id": 204,
+    "transaction_id": "TXN-916637C513",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.11% below threshold. Transaction approved.",
+    "confidence": 0.0011,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 13:41:19"
+  },
+  {
+    "id": 205,
+    "transaction_id": "TXN-DE9AACE42B",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.06% below threshold. Transaction approved.",
+    "confidence": 0.0006,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 13:41:19"
+  },
+  {
+    "id": 206,
+    "transaction_id": "TXN-CF3343222F",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.07% below threshold. Transaction approved.",
+    "confidence": 0.0007,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 13:41:19"
+  },
+  {
+    "id": 207,
+    "transaction_id": "TXN-028EE9CE59",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.04% below threshold. Transaction approved.",
+    "confidence": 0.0004,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 13:41:19"
+  },
+  {
+    "id": 208,
+    "transaction_id": "TXN-DC42F74E45",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.02% below threshold. Transaction approved.",
+    "confidence": 0.0002,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 13:41:19"
+  },
+  {
+    "id": 209,
+    "transaction_id": "TXN-A369B033C3",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.08% below threshold. Transaction approved.",
+    "confidence": 0.0008,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 13:41:19"
+  },
+  {
+    "id": 210,
+    "transaction_id": "TXN-AAFD3A3C38",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.03% below threshold. Transaction approved.",
+    "confidence": 0.0003,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 13:41:19"
+  },
+  {
+    "id": 211,
+    "transaction_id": "TXN-C6F686D0C6",
+    "action": "FLAGGED_FRAUD",
+    "reason": "Fraud score 100.00% exceeded threshold. Type: card_testing",
+    "confidence": 1.0,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 13:41:19"
+  },
+  {
+    "id": 212,
+    "transaction_id": "TXN-C4C9403566",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.03% below threshold. Transaction approved.",
+    "confidence": 0.0003,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 13:41:19"
+  },
+  {
+    "id": 213,
+    "transaction_id": "TXN-ADF6966BEA",
+    "action": "FLAGGED_FRAUD",
+    "reason": "Fraud score 100.00% exceeded threshold. Type: card_testing",
+    "confidence": 1.0,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 13:41:19"
+  },
+  {
+    "id": 214,
+    "transaction_id": "TXN-0CF1B59314",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.08% below threshold. Transaction approved.",
+    "confidence": 0.0008,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 13:41:19"
+  },
+  {
+    "id": 215,
+    "transaction_id": "TXN-E0ACE0DC98",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.23% below threshold. Transaction approved.",
+    "confidence": 0.0023,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 13:41:19"
+  },
+  {
+    "id": 216,
+    "transaction_id": "TXN-99B1082928",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.03% below threshold. Transaction approved.",
+    "confidence": 0.0003,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 13:41:19"
+  },
+  {
+    "id": 217,
+    "transaction_id": "TXN-8BE10DC720",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.05% below threshold. Transaction approved.",
+    "confidence": 0.0005,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 13:41:19"
+  },
+  {
+    "id": 218,
+    "transaction_id": "TXN-9988D30FD1",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.04% below threshold. Transaction approved.",
+    "confidence": 0.0004,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 13:41:19"
+  },
+  {
+    "id": 219,
+    "transaction_id": "TXN-F4E1792F6C",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.03% below threshold. Transaction approved.",
+    "confidence": 0.0003,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 13:41:19"
+  },
+  {
+    "id": 220,
+    "transaction_id": "TXN-BE6CBB8F31",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.02% below threshold. Transaction approved.",
+    "confidence": 0.0002,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 13:41:19"
+  },
+  {
+    "id": 221,
+    "transaction_id": "TXN-68CF008287",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.04% below threshold. Transaction approved.",
+    "confidence": 0.0004,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 13:41:19"
+  },
+  {
+    "id": 222,
+    "transaction_id": "TXN-52A661F544",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.02% below threshold. Transaction approved.",
+    "confidence": 0.0002,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 13:41:19"
+  },
+  {
+    "id": 223,
+    "transaction_id": "TXN-326F0E182E",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.07% below threshold. Transaction approved.",
+    "confidence": 0.0007,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 13:41:19"
+  },
+  {
+    "id": 224,
+    "transaction_id": "TXN-740AC7D053",
+    "action": "APPROVED",
+    "reason": "Fraud score 0.03% below threshold. Transaction approved.",
+    "confidence": 0.0003,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 13:41:19"
+  },
+  {
+    "id": 225,
+    "transaction_id": "TXN-991C7664A8",
+    "action": "CHARGEBACK_GENERATED",
+    "reason": "Dispute letter generated for fraud type: card_testing",
+    "confidence": 1.0,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 13:41:20"
+  },
+  {
+    "id": 226,
+    "transaction_id": "TXN-01848B3871",
+    "action": "CHARGEBACK_GENERATED",
+    "reason": "Dispute letter generated for fraud type: card_testing",
+    "confidence": 1.0,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 13:41:21"
+  },
+  {
+    "id": 227,
+    "transaction_id": "TXN-AEC7F267DC",
+    "action": "CHARGEBACK_GENERATED",
+    "reason": "Dispute letter generated for fraud type: card_testing",
+    "confidence": 0.9999,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 13:41:22"
+  },
+  {
+    "id": 228,
+    "transaction_id": "TXN-99A6596CEC",
+    "action": "CHARGEBACK_GENERATED",
+    "reason": "Dispute letter generated for fraud type: card_testing",
+    "confidence": 1.0,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 13:41:23"
+  },
+  {
+    "id": 229,
+    "transaction_id": "TXN-C6F686D0C6",
+    "action": "CHARGEBACK_GENERATED",
+    "reason": "Dispute letter generated for fraud type: card_testing",
+    "confidence": 1.0,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 13:41:24"
+  },
+  {
+    "id": 230,
+    "transaction_id": "TXN-ADF6966BEA",
+    "action": "CHARGEBACK_GENERATED",
+    "reason": "Dispute letter generated for fraud type: card_testing",
+    "confidence": 1.0,
+    "model_version": "v1.0",
+    "created_at": "2026-08-26 13:41:24"
+  }
+]

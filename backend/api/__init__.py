@@ -1,6 +1,10 @@
 import uuid
 import random
-from fastapi import APIRouter, HTTPException
+import hashlib
+import hmac
+import json
+from datetime import datetime
+from fastapi import APIRouter, HTTPException, Request, Header
 from pydantic import BaseModel
 from typing import Optional
 from model import predict, get_metrics, train_model
@@ -10,6 +14,7 @@ from database import (
     insert_chargeback, get_all_transactions,
     get_audit_logs, get_dashboard_stats
 )
+
 
 router = APIRouter()
 
@@ -230,3 +235,184 @@ async def retrain():
 @router.get("/health")
 async def health():
     return {"status": "ok", "service": "FraudShield API v1.0"}
+
+
+# ─── Razorpay Webhook Simulation ─────────────────────────────────────────────
+
+RAZORPAY_WEBHOOK_SECRET = "fraudshield_webhook_secret_2026"
+
+class RazorpayWebhookPayload(BaseModel):
+    event: str
+    payload: dict
+
+def verify_razorpay_signature(body: str, signature: str, secret: str) -> bool:
+    expected = hmac.new(
+        secret.encode(),
+        body.encode(),
+        hashlib.sha256
+    ).hexdigest()
+    return hmac.compare_digest(expected, signature)
+
+
+@router.post("/webhook/razorpay")
+async def razorpay_webhook(request: Request):
+    body = await request.body()
+    body_str = body.decode()
+
+    signature = request.headers.get("x-razorpay-signature", "simulated")
+
+    try:
+        data = json.loads(body_str)
+    except Exception:
+        raise HTTPException(status_code=400, detail="Invalid JSON payload")
+
+    event = data.get("event", "unknown")
+    payload = data.get("payload", {})
+
+    payment = payload.get("payment", {}).get("entity", {})
+
+    transaction_id = f"RZP-{uuid.uuid4().hex[:10].upper()}"
+    amount = payment.get("amount", 0) / 100
+    method = payment.get("method", "card")
+    contact = payment.get("contact", "unknown")
+
+    await insert_audit_log(
+        transaction_id,
+        f"WEBHOOK_{event.upper().replace('.', '_')}",
+        f"Razorpay webhook received: {event} | Amount: \u20b9{amount} | Method: {method} | Signature: {signature[:16]}...",
+        None
+    )
+
+    if event == "payment.failed":
+        tx_dict = {
+            "amount": amount,
+            "merchant_id": payment.get("merchant_id", "MER-RZP"),
+            "customer_id": contact,
+            "payment_method": method,
+            "location": "Unknown",
+            "device_type": "mobile",
+            "hour_of_day": datetime.now().hour,
+            "transactions_last_hour": random.randint(1, 10),
+            "is_new_device": random.choice([0, 1]),
+            "amount_zscore": round(random.uniform(-1, 4), 2)
+        }
+
+        result = predict(tx_dict)
+
+        record = {
+            "id": transaction_id,
+            **tx_dict,
+            "fraud_score": result["fraud_score"],
+            "is_fraud": result["is_fraud"],
+            "fraud_type": result["fraud_type"],
+            "status": "flagged" if result["is_fraud"] else "failed_legitimate"
+        }
+        await insert_transaction(record)
+
+        action = "FLAGGED_FRAUD" if result["is_fraud"] else "FAILED_LEGITIMATE"
+        reason = (
+            f"Failed payment analyzed. Fraud score: {result['fraud_score']:.2%}. "
+            f"Classification: {result['fraud_type'] if result['is_fraud'] else 'Legitimate failure'}"
+        )
+        await insert_audit_log(transaction_id, action, reason, result["fraud_score"])
+
+        return {
+            "status": "processed",
+            "event": event,
+            "transaction_id": transaction_id,
+            "fraud_analysis": result,
+            "action": action
+        }
+
+    return {
+        "status": "acknowledged",
+        "event": event,
+        "transaction_id": transaction_id
+    }
+
+
+@router.post("/webhook/simulate")
+async def simulate_webhook(scenario: str = "payment.failed"):
+    scenarios = {
+        "payment.failed": {
+            "event": "payment.failed",
+            "payload": {
+                "payment": {
+                    "entity": {
+                        "amount": random.randint(10000, 500000),
+                        "method": random.choice(["card", "upi", "netbanking"]),
+                        "contact": f"+919{random.randint(100000000,999999999)}",
+                        "merchant_id": f"MER-{random.randint(1,20):03d}",
+                        "error_code": random.choice([
+                            "BAD_REQUEST_ERROR",
+                            "GATEWAY_ERROR",
+                            "SERVER_ERROR"
+                        ]),
+                        "error_description": random.choice([
+                            "Insufficient funds",
+                            "Card declined by bank",
+                            "Authentication failed",
+                            "Network timeout"
+                        ])
+                    }
+                }
+            }
+        },
+        "payment.captured": {
+            "event": "payment.captured",
+            "payload": {
+                "payment": {
+                    "entity": {
+                        "amount": random.randint(500, 50000),
+                        "method": random.choice(["upi", "card"]),
+                        "contact": f"+919{random.randint(100000000,999999999)}",
+                        "merchant_id": f"MER-{random.randint(1,20):03d}"
+                    }
+                }
+            }
+        }
+    }
+
+    payload = scenarios.get(scenario, scenarios["payment.failed"])
+    body = json.dumps(payload)
+    signature = hmac.new(
+        RAZORPAY_WEBHOOK_SECRET.encode(),
+        body.encode(),
+        hashlib.sha256
+    ).hexdigest()
+
+    import httpx
+
+    async with httpx.AsyncClient(base_url="http://localhost:8000") as client:
+        response = await client.post(
+            "/api/webhook/razorpay",
+            content=body,
+            headers={
+                "content-type": "application/json",
+                "x-razorpay-signature": signature
+            }
+        )
+        return response.json()
+
+
+# ─── Model confusion matrix ───────────────────────────────────────────────────
+
+@router.get("/metrics/confusion")
+async def confusion_matrix_data():
+    m = get_metrics()
+    return {
+        "matrix": [
+            [m["true_negatives"],  m["false_positives"]],
+            [m["false_negatives"], m["true_positives"]]
+        ],
+        "labels": ["Legitimate", "Fraud"],
+        "precision":        m["precision"],
+        "recall":           m["recall"],
+        "f1":               m["f1"],
+        "auc_roc":          m["auc_roc"],
+        "fp_cost_inr":      m["fp_cost_inr"],
+        "fn_cost_inr":      m["fn_cost_inr"],
+        "total_cost_inr":   m["total_cost_inr"],
+        "train_samples":    m["train_samples"],
+        "test_samples":     m["test_samples"]
+    }

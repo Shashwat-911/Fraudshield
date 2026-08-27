@@ -6,10 +6,11 @@ import {
 } from 'recharts'
 import {
   ShieldCheck, ShieldX, IndianRupee,
-  Brain, RefreshCw, Loader2
+  Brain, RefreshCw, Loader2, Webhook
 } from 'lucide-react'
+import ConfusionMatrix from '../components/ConfusionMatrix'
 
-const API = 'http://localhost:8000/api'
+const API = import.meta.env.VITE_API_URL
 const COLORS = ['#3b82f6', '#ef4444', '#22c55e', '#f59e0b']
 
 function StatCard({ icon: Icon, label, value, sub, color }) {
@@ -43,11 +44,18 @@ export default function Dashboard() {
   const [batching, setBatching] = useState(false)
   const [batchResult, setBatchResult] = useState(null)
   const [error, setError]     = useState(null)
+  const [confusion, setConfusion]     = useState(null)
+  const [simulating, setSimulating]   = useState(false)
+  const [simResult, setSimResult]     = useState(null)
 
   const fetchStats = async () => {
     try {
-      const { data } = await axios.get(`${API}/dashboard`)
-      setStats(data)
+      const [dashRes, confRes] = await Promise.all([
+        axios.get(`${API}/dashboard`),
+        axios.get(`${API}/metrics/confusion`)
+      ])
+      setStats(dashRes.data)
+      setConfusion(confRes.data)
       setError(null)
     } catch {
       setError('Backend offline. Start the FastAPI server.')
@@ -126,6 +134,30 @@ export default function Dashboard() {
             {batching
               ? <><Loader2 className="w-4 h-4 animate-spin" /> Running...</>
               : <><Brain className="w-4 h-4" /> Run 100 Batch</>}
+          </button>
+          <button
+            onClick={async () => {
+              setSimulating(true)
+              setSimResult(null)
+              try {
+                const { data } = await axios.post(
+                  `${API}/webhook/simulate?scenario=payment.failed`
+                )
+                setSimResult(data)
+                await fetchStats()
+              } catch {
+                setSimResult({ error: 'Simulation failed' })
+              } finally {
+                setSimulating(false)
+              }
+            }}
+            disabled={simulating}
+            className="flex items-center gap-2 px-4 py-2 bg-purple-600 
+                       hover:bg-purple-500 disabled:opacity-50 text-white 
+                       rounded-lg text-sm transition">
+            {simulating
+              ? <><Loader2 className="w-4 h-4 animate-spin" /> Simulating...</>
+              : <><Webhook className="w-4 h-4" /> Simulate Webhook</>}
           </button>
         </div>
       </div>
@@ -213,6 +245,33 @@ export default function Dashboard() {
           </BarChart>
         </ResponsiveContainer>
       </div>
+
+      {/* Webhook result banner */}
+      {simResult && !simResult.error && (
+        <div className="bg-purple-900/30 border border-purple-700 rounded-xl p-4
+                        flex items-center justify-between">
+          <div>
+            <p className="text-purple-300 font-medium">
+              Webhook Processed — {simResult.event}
+            </p>
+            <p className="text-slate-400 text-sm">
+              Transaction: {simResult.transaction_id} · 
+              Action: {simResult.action ?? 'ACKNOWLEDGED'}
+            </p>
+          </div>
+          {simResult.fraud_analysis && (
+            <p className={`font-bold text-lg ${
+              simResult.fraud_analysis.is_fraud
+                ? 'text-red-400' : 'text-green-400'
+            }`}>
+              {simResult.fraud_analysis.is_fraud ? '🚨 FRAUD' : '✅ CLEAN'}
+            </p>
+          )}
+        </div>
+      )}
+
+      {/* Confusion matrix */}
+      <ConfusionMatrix data={confusion} />
 
       {/* Pie + Cost */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">

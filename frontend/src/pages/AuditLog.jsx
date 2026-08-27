@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import axios from 'axios'
 import { ScrollText, RefreshCw, Loader2, CheckCircle, AlertTriangle, Info } from 'lucide-react'
 
-const API = 'http://localhost:8000/api'
+const API = import.meta.env.VITE_API_URL
 
 const ACTION_STYLES = {
   FLAGGED_FRAUD: {

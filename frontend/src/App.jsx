@@ -3,6 +3,7 @@ import Navbar from './components/Navbar'
 import Dashboard from './pages/Dashboard'
 import Transactions from './pages/Transactions'
 import AuditLog from './pages/AuditLog'
+import Analyze from './pages/Analyze'
 
 export default function App() {
   return (
@@ -13,6 +14,7 @@ export default function App() {
           <Route path="/" element={<Dashboard />} />
           <Route path="/transactions" element={<Transactions />} />
           <Route path="/audit" element={<AuditLog />} />
+          <Route path="/analyze" element={<Analyze />} />
         </Routes>
       </main>
     </div>

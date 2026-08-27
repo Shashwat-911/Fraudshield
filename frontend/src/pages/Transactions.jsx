@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import axios from 'axios'
 import { ShieldX, ShieldCheck, FileText, Loader2, RefreshCw } from 'lucide-react'
 
-const API = 'http://localhost:8000/api'
+const API = import.meta.env.VITE_API_URL
 
 const FRAUD_TYPE_COLORS = {
   card_testing:     'bg-orange-900/40 text-orange-300 border-orange-700',

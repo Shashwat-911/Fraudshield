@@ -1,0 +1,51 @@
+[
+  {
+    "id": 1,
+    "transaction_id": "TXN-6971063764",
+    "fraud_type": "card_testing",
+    "dispute_letter": "Dear Disputes Team,\n\nWe are writing to formally dispute the chargeback raised against Transaction ID: TXN-6971063764.\n\nOur AI-powered fraud detection system flagged this transaction with a fraud score of 99.99%, \nexceeding our 50% threshold, and classified it as: Card Testing.\n\nEVIDENCE SUMMARY:\n- Unusually high transaction frequency in short window\n- Pattern consistent with automated card validation attempts\n- Transactions occur in rapid succession below typical alert thresholds\n\nTransaction Amount: INR 313,590.56\nMerchant ID: MER-007\nFraud Classification: Multiple rapid small transactions detected from same source\n\nBased on the above automated detection evidence, we respectfully request that this chargeback \nbe reversed. Our system's detection is grounded strictly in observable transaction signals \nand does not rely on assumptions beyond the data provided.\n\nWe are happy to provide full audit logs upon request.\n\nSincerely,\nFraudShield Risk Team\nMerchant: MER-007\n",
+    "created_at": "2026-08-26 12:06:54"
+  },
+  {
+    "id": 2,
+    "transaction_id": "TXN-991C7664A8",
+    "fraud_type": "card_testing",
+    "dispute_letter": "Dear Disputes Team,\n\nWe are writing to formally dispute the chargeback raised against Transaction ID: TXN-991C7664A8.\n\nOur AI-powered fraud detection system flagged this transaction with a fraud score of 100.00%, \nexceeding our 50% threshold, and classified it as: Card Testing.\n\nEVIDENCE SUMMARY:\n- Unusually high transaction frequency in short window\n- Pattern consistent with automated card validation attempts\n- Transactions occur in rapid succession below typical alert thresholds\n\nTransaction Amount: INR 144,005.35\nMerchant ID: MER-005\nFraud Classification: Multiple rapid small transactions detected from same source\n\nBased on the above automated detection evidence, we respectfully request that this chargeback \nbe reversed. Our system's detection is grounded strictly in observable transaction signals \nand does not rely on assumptions beyond the data provided.\n\nWe are happy to provide full audit logs upon request.\n\nSincerely,\nFraudShield Risk Team\nMerchant: MER-005\n",
+    "created_at": "2026-08-26 13:41:20"
+  },
+  {
+    "id": 3,
+    "transaction_id": "TXN-01848B3871",
+    "fraud_type": "card_testing",
+    "dispute_letter": "Dear Disputes Team,\n\nWe are writing to formally dispute the chargeback raised against Transaction ID: TXN-01848B3871.\n\nOur AI-powered fraud detection system flagged this transaction with a fraud score of 100.00%, \nexceeding our 50% threshold, and classified it as: Card Testing.\n\nEVIDENCE SUMMARY:\n- Unusually high transaction frequency in short window\n- Pattern consistent with automated card validation attempts\n- Transactions occur in rapid succession below typical alert thresholds\n\nTransaction Amount: INR 406,112.45\nMerchant ID: MER-002\nFraud Classification: Multiple rapid small transactions detected from same source\n\nBased on the above automated detection evidence, we respectfully request that this chargeback \nbe reversed. Our system's detection is grounded strictly in observable transaction signals \nand does not rely on assumptions beyond the data provided.\n\nWe are happy to provide full audit logs upon request.\n\nSincerely,\nFraudShield Risk Team\nMerchant: MER-002\n",
+    "created_at": "2026-08-26 13:41:21"
+  },
+  {
+    "id": 4,
+    "transaction_id": "TXN-AEC7F267DC",
+    "fraud_type": "card_testing",
+    "dispute_letter": "Dear Disputes Team,\n\nWe are writing to formally dispute the chargeback raised against Transaction ID: TXN-AEC7F267DC.\n\nOur AI-powered fraud detection system flagged this transaction with a fraud score of 99.99%, \nexceeding our 50% threshold, and classified it as: Card Testing.\n\nEVIDENCE SUMMARY:\n- Unusually high transaction frequency in short window\n- Pattern consistent with automated card validation attempts\n- Transactions occur in rapid succession below typical alert thresholds\n\nTransaction Amount: INR 42,782.80\nMerchant ID: MER-003\nFraud Classification: Multiple rapid small transactions detected from same source\n\nBased on the above automated detection evidence, we respectfully request that this chargeback \nbe reversed. Our system's detection is grounded strictly in observable transaction signals \nand does not rely on assumptions beyond the data provided.\n\nWe are happy to provide full audit logs upon request.\n\nSincerely,\nFraudShield Risk Team\nMerchant: MER-003\n",
+    "created_at": "2026-08-26 13:41:22"
+  },
+  {
+    "id": 5,
+    "transaction_id": "TXN-99A6596CEC",
+    "fraud_type": "card_testing",
+    "dispute_letter": "Dear Disputes Team,\n\nWe are writing to formally dispute the chargeback raised against Transaction ID: TXN-99A6596CEC.\n\nOur AI-powered fraud detection system flagged this transaction with a fraud score of 100.00%, \nexceeding our 50% threshold, and classified it as: Card Testing.\n\nEVIDENCE SUMMARY:\n- Unusually high transaction frequency in short window\n- Pattern consistent with automated card validation attempts\n- Transactions occur in rapid succession below typical alert thresholds\n\nTransaction Amount: INR 206,402.83\nMerchant ID: MER-019\nFraud Classification: Multiple rapid small transactions detected from same source\n\nBased on the above automated detection evidence, we respectfully request that this chargeback \nbe reversed. Our system's detection is grounded strictly in observable transaction signals \nand does not rely on assumptions beyond the data provided.\n\nWe are happy to provide full audit logs upon request.\n\nSincerely,\nFraudShield Risk Team\nMerchant: MER-019\n",
+    "created_at": "2026-08-26 13:41:23"
+  },
+  {
+    "id": 6,
+    "transaction_id": "TXN-C6F686D0C6",
+    "fraud_type": "card_testing",
+    "dispute_letter": "Dear Disputes Team,\n\nWe are writing to formally dispute the chargeback raised against Transaction ID: TXN-C6F686D0C6.\n\nOur AI-powered fraud detection system flagged this transaction with a fraud score of 100.00%, \nexceeding our 50% threshold, and classified it as: Card Testing.\n\nEVIDENCE SUMMARY:\n- Unusually high transaction frequency in short window\n- Pattern consistent with automated card validation attempts\n- Transactions occur in rapid succession below typical alert thresholds\n\nTransaction Amount: INR 123,024.01\nMerchant ID: MER-023\nFraud Classification: Multiple rapid small transactions detected from same source\n\nBased on the above automated detection evidence, we respectfully request that this chargeback \nbe reversed. Our system's detection is grounded strictly in observable transaction signals \nand does not rely on assumptions beyond the data provided.\n\nWe are happy to provide full audit logs upon request.\n\nSincerely,\nFraudShield Risk Team\nMerchant: MER-023\n",
+    "created_at": "2026-08-26 13:41:24"
+  },
+  {
+    "id": 7,
+    "transaction_id": "TXN-ADF6966BEA",
+    "fraud_type": "card_testing",
+    "dispute_letter": "Dear Disputes Team,\n\nWe are writing to formally dispute the chargeback raised against Transaction ID: TXN-ADF6966BEA.\n\nOur AI-powered fraud detection system flagged this transaction with a fraud score of 100.00%, \nexceeding our 50% threshold, and classified it as: Card Testing.\n\nEVIDENCE SUMMARY:\n- Unusually high transaction frequency in short window\n- Pattern consistent with automated card validation attempts\n- Transactions occur in rapid succession below typical alert thresholds\n\nTransaction Amount: INR 420,328.99\nMerchant ID: MER-013\nFraud Classification: Multiple rapid small transactions detected from same source\n\nBased on the above automated detection evidence, we respectfully request that this chargeback \nbe reversed. Our system's detection is grounded strictly in observable transaction signals \nand does not rely on assumptions beyond the data provided.\n\nWe are happy to provide full audit logs upon request.\n\nSincerely,\nFraudShield Risk Team\nMerchant: MER-013\n",
+    "created_at": "2026-08-26 13:41:24"
+  }
+]
