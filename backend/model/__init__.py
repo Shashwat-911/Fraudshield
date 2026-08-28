@@ -47,17 +47,35 @@ def generate_synthetic_data(n=2000):
     n_hard = int(n_fraud * 0.4)   # hard borderline fraud cases
     n_easy = n_fraud - n_hard      # obvious fraud cases
 
-    fraud_easy = pd.DataFrame({
-        "amount": np.random.lognormal(10, 1.2, n_easy),
-        "hour_of_day": np.random.choice([0, 1, 2, 3, 23], n_easy),
-        "transactions_last_hour": np.random.randint(8, 15, n_easy),
-        "is_new_device": np.random.choice([0, 1], n_easy, p=[0.1, 0.9]),
-        "amount_zscore": np.random.normal(3.5, 0.8, n_easy),
-        "payment_method_enc": np.random.randint(0, 4, n_easy),
-        "location_enc": np.random.randint(0, 10, n_easy),
-        "device_type_enc": np.random.randint(0, 3, n_easy),
+    # Mix of card testing AND account takeover patterns
+    n_card_test = n_easy // 2
+    n_acct_takeover = n_easy - n_card_test
+
+    fraud_card_test = pd.DataFrame({
+        "amount": np.random.lognormal(5, 0.5, n_card_test),
+        "hour_of_day": np.random.choice([0, 1, 2, 3, 23], n_card_test),
+        "transactions_last_hour": np.random.randint(8, 15, n_card_test),
+        "is_new_device": np.random.choice([0, 1], n_card_test, p=[0.1, 0.9]),
+        "amount_zscore": np.random.normal(2.0, 0.8, n_card_test),
+        "payment_method_enc": np.random.randint(0, 4, n_card_test),
+        "location_enc": np.random.randint(0, 10, n_card_test),
+        "device_type_enc": np.random.randint(0, 3, n_card_test),
         "is_fraud": 1
     })
+
+    fraud_acct_takeover = pd.DataFrame({
+        "amount": np.random.lognormal(12, 0.8, n_acct_takeover),
+        "hour_of_day": np.random.choice([0, 1, 2, 3, 23], n_acct_takeover),
+        "transactions_last_hour": np.random.randint(1, 4, n_acct_takeover),
+        "is_new_device": np.ones(n_acct_takeover, dtype=int),
+        "amount_zscore": np.random.normal(4.5, 0.5, n_acct_takeover),
+        "payment_method_enc": np.random.randint(0, 4, n_acct_takeover),
+        "location_enc": np.random.randint(0, 10, n_acct_takeover),
+        "device_type_enc": np.random.randint(0, 3, n_acct_takeover),
+        "is_fraud": 1
+    })
+
+    fraud_easy = pd.concat([fraud_card_test, fraud_acct_takeover], ignore_index=True)
 
     fraud_hard = pd.DataFrame({
         "amount": np.random.lognormal(7.5, 1.3, n_hard),
@@ -75,6 +93,7 @@ def generate_synthetic_data(n=2000):
         [legit, fraud_easy, fraud_hard],
         ignore_index=True
     ).sample(frac=1, random_state=42)
+    print(f"[FraudShield] Dataset: {len(legit)} legit, {len(fraud_easy)} fraud_easy, {len(fraud_hard)} fraud_hard")
     return df
 
 
@@ -189,9 +208,15 @@ def predict(transaction: dict) -> dict:
 
     fraud_type = None
     if is_fraud:
-        if transaction.get("transactions_last_hour", 0) >= 5:
+        amount = transaction.get("amount", 0)
+        velocity = transaction.get("transactions_last_hour", 0)
+        new_device = transaction.get("is_new_device", 0)
+        zscore = transaction.get("amount_zscore", 0)
+        hour = transaction.get("hour_of_day", 12)
+
+        if velocity >= 5:
             fraud_type = "card_testing"
-        elif transaction.get("is_new_device", 0) == 1 and transaction.get("amount", 0) > 50000:
+        elif new_device and amount > 50000:
             fraud_type = "account_takeover"
         else:
             fraud_type = "friendly_fraud"
