@@ -1,5 +1,5 @@
 import { Link, useLocation } from 'react-router-dom'
-import { ShieldAlert, BarChart3, List, ScrollText } from 'lucide-react'
+import { ShieldAlert, BarChart3, List, ScrollText, ExternalLink } from 'lucide-react'
 
 const links = [
   { to: '/',             label: 'Dashboard',    icon: BarChart3   },
@@ -44,7 +44,17 @@ export default function Navbar() {
           ))}
         </div>
 
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-3">
+          <a
+            href="http://localhost:8000/docs"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-1.5 text-xs text-slate-400 
+                       hover:text-blue-400 transition"
+          >
+            <ExternalLink className="w-3.5 h-3.5" />
+            API Docs
+          </a>
           <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
           <span className="text-xs text-slate-400">Live</span>
         </div>

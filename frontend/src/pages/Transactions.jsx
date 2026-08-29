@@ -128,11 +128,31 @@ export default function Transactions() {
               {letter.dispute_letter}
             </pre>
           </div>
-          <button
-            onClick={() => navigator.clipboard.writeText(letter.dispute_letter)}
-            className="mt-3 text-xs text-blue-400 hover:underline">
-            Copy to clipboard
-          </button>
+          <div className="mt-3 flex items-center gap-4">
+            <button
+              onClick={() => navigator.clipboard.writeText(letter.dispute_letter)}
+              className="text-xs text-blue-400 hover:underline">
+              Copy to clipboard
+            </button>
+            <button
+              onClick={() => {
+                const blob = new Blob([letter.dispute_letter], { type: 'text/plain' })
+                const url = URL.createObjectURL(blob)
+                const a = document.createElement('a')
+                a.href = url
+                a.download = `dispute_${letter.transaction_id}.txt`
+                a.click()
+                URL.revokeObjectURL(url)
+              }}
+              className="text-xs text-green-400 hover:underline">
+              Download .txt
+            </button>
+            <button
+              onClick={() => window.print()}
+              className="text-xs text-slate-400 hover:underline">
+              Print / Save PDF
+            </button>
+          </div>
         </div>
       )}
 
