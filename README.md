@@ -1,10 +1,11 @@
 # 🛡️ FraudShield
-### AI-powered fraud detection for Razorpay merchants — Track 02: AI Risk Manager
+### AI-Powered Risk Manager for Razorpay Merchants — Track 02
 
-**[Live Demo](https://fraudshield-frontend.vercel.app)** · 
-**[API Docs](https://fraudshield-backend.onrender.com/docs)** · 
-**[Video Pitch](#)** · 
-Built for Razorpay AI Buildathon 2026
+> 🏆 **Razorpay AI Buildathon 2026 Submission** | **Track 02: AI Risk Manager**
+
+| 🚀 **Live Web App** | ⚡ **API & Swagger Docs** | 🎥 **Video Demo Pitch** | 📊 **Track Focus** |
+| :---: | :---: | :---: | :---: |
+| **[fraudshield-frontend.vercel.app](https://fraudshield-frontend.vercel.app/)** | **[fraudshield-backend.onrender.com/docs](https://fraudshield-backend.onrender.com/docs)** | **[Watch Pitch Demo](#)** | **AI Risk Manager** |
 
 ---
 
