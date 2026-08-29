@@ -1,8 +1,9 @@
+import os
 import aiosqlite
 import json
 from datetime import datetime
 
-DB_PATH = "fraudshield.db"
+DB_PATH = os.getenv("DB_PATH", os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "fraudshield.db")))
 
 async def init_db():
     async with aiosqlite.connect(DB_PATH) as db:

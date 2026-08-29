@@ -69,6 +69,7 @@ async def analyze_transaction(tx: TransactionInput):
         "is_fraud": result["is_fraud"],
         "fraud_type": result["fraud_type"],
         "status": record["status"],
+        "top_risk_factors": result.get("top_risk_factors", []),
         "audit": {"action": action, "reason": reason}
     }
 

@@ -2,6 +2,7 @@ import os
 import pickle
 import numpy as np
 import pandas as pd
+import shap
 from xgboost import XGBClassifier
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
@@ -11,9 +12,10 @@ from sklearn.metrics import (
 )
 from imblearn.over_sampling import SMOTE
 
-MODEL_PATH = "backend/model/fraud_model.pkl"
-SCALER_PATH = "backend/model/scaler.pkl"
-METRICS_PATH = "backend/model/metrics.pkl"
+MODEL_DIR = os.path.dirname(__file__)
+MODEL_PATH = os.path.join(MODEL_DIR, "fraud_model.pkl")
+SCALER_PATH = os.path.join(MODEL_DIR, "scaler.pkl")
+METRICS_PATH = os.path.join(MODEL_DIR, "metrics.pkl")
 
 FEATURES = [
     "amount", "hour_of_day", "transactions_last_hour",
@@ -134,7 +136,6 @@ def train_model():
         max_depth=5,
         learning_rate=0.05,
         scale_pos_weight=10,
-        use_label_encoder=False,
         eval_metric="logloss",
         random_state=42
     )
@@ -221,11 +222,41 @@ def predict(transaction: dict) -> dict:
         else:
             fraud_type = "friendly_fraud"
 
+    # SHAP explainability
+    explanation = []
+    try:
+        explainer = shap.TreeExplainer(_model)
+        shap_values = explainer.shap_values(X_sc)
+
+        if isinstance(shap_values, list):
+            sv = shap_values[1][0]
+        else:
+            sv = shap_values[0] if shap_values.ndim > 1 else shap_values
+
+        feature_impacts = []
+        for feat, shap_val in zip(FEATURES, sv):
+            feature_impacts.append({
+                "feature": feat,
+                "shap_value": round(float(shap_val), 4),
+                "impact": "increases_fraud_risk" if shap_val > 0 else "decreases_fraud_risk",
+                "magnitude": round(abs(float(shap_val)), 4)
+            })
+
+        explanation = sorted(
+            feature_impacts,
+            key=lambda x: x["magnitude"],
+            reverse=True
+        )[:5]
+
+    except Exception as e:
+        explanation = [{"error": f"SHAP unavailable: {str(e)}"}]
+
     return {
         "fraud_score": round(fraud_score, 4),
         "is_fraud": is_fraud,
         "fraud_type": fraud_type,
-        "threshold": 0.5
+        "threshold": 0.5,
+        "top_risk_factors": explanation
     }
 
 

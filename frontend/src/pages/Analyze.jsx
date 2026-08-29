@@ -311,6 +311,44 @@ export default function Analyze() {
                 <p className="text-slate-400 text-xs mb-1">Audit Reason</p>
                 <p className="text-slate-300 text-sm">{result.audit?.reason}</p>
               </div>
+
+              {result.top_risk_factors && result.top_risk_factors.length > 0 && (
+                <div className="bg-slate-900/50 rounded-lg p-3">
+                  <p className="text-slate-400 text-xs mb-2">
+                    Top Risk Factors (SHAP)
+                  </p>
+                  <div className="space-y-2">
+                    {result.top_risk_factors.map((f, i) => (
+                      <div key={i} className="flex items-center gap-2">
+                        <span className="text-slate-500 text-xs w-4">{i+1}.</span>
+                        <span className="text-slate-300 text-xs w-36 truncate">
+                          {f.feature.replace(/_/g, ' ')}
+                        </span>
+                        <div className="flex-1 bg-slate-700 rounded-full h-1.5">
+                          <div
+                            className={`h-1.5 rounded-full ${
+                              f.impact === 'increases_fraud_risk'
+                                ? 'bg-red-500' : 'bg-green-500'
+                            }`}
+                            style={{
+                              width: `${Math.min(f.magnitude * 10, 100)}%`
+                            }}
+                          />
+                        </div>
+                        <span className={`text-xs font-mono w-12 text-right ${
+                          f.impact === 'increases_fraud_risk'
+                            ? 'text-red-400' : 'text-green-400'
+                        }`}>
+                          {f.shap_value > 0 ? '+' : ''}{f.shap_value.toFixed(2)}
+                        </span>
+                      </div>
+                    ))}
+                  </div>
+                  <p className="text-slate-600 text-xs mt-2">
+                    Red = increases fraud risk · Green = decreases fraud risk
+                  </p>
+                </div>
+              )}
             </div>
           ) : (
             <div className="bg-slate-800 border border-slate-700 rounded-xl p-8 

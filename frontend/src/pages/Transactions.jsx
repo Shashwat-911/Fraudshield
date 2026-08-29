@@ -119,6 +119,11 @@ export default function Transactions() {
               Transaction: {letter.transaction_id} · 
               Type: {FRAUD_TYPE_LABELS[letter.fraud_type] ?? letter.fraud_type}
             </p>
+            {letter.dispute_letter.includes("[NOTE: Generated via fallback template") && (
+              <div className="mb-3 px-3 py-1.5 bg-yellow-900/30 border border-yellow-700 rounded-lg text-xs text-yellow-300 flex items-center justify-between">
+                <span>⚠️ LLM Gateway Offline: Using deterministic heuristic fallback</span>
+              </div>
+            )}
             <pre className="text-slate-300 text-sm whitespace-pre-wrap font-mono leading-relaxed">
               {letter.dispute_letter}
             </pre>
