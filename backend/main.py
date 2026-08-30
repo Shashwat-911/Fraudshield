@@ -32,7 +32,7 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "http://localhost:5173",
-        "https://fraudshield-frontend.vercel.app",
+        "https://fraudshield-mbh2.onrender.com",
         "*"
     ],
     allow_credentials=True,
