@@ -5,7 +5,7 @@
 
 | 🚀 **Live Web App** | ⚡ **API & Swagger Docs** | 🎥 **Video Demo Pitch** | 📊 **Track Focus** |
 | :---: | :---: | :---: | :---: |
-| **[fraudshield-frontend.vercel.app](https://fraudshield-frontend.vercel.app/)** | **[fraudshield-backend.onrender.com/docs](https://fraudshield-backend.onrender.com/docs)** | **[Watch Pitch Demo](#)** | **AI Risk Manager** |
+| **[fraudshield-susii.vercel.app](https://fraudshield-susii.vercel.app)** | **[fraudshield-mbh2.onrender.com/docs](https://fraudshield-mbh2.onrender.com/docs)** | **[Watch Pitch Demo](#)** | **AI Risk Manager** |
 
 ---
 
@@ -184,8 +184,8 @@ python -m pytest backend/tests/test_api.py -v
 
 | Service | Platform | URL |
 |---|---|---|
-| Backend | Render (free tier) | https://fraudshield-backend.onrender.com |
-| Frontend | Vercel (free tier) | https://fraudshield-frontend.vercel.app |
+| Backend | Render (free tier) | https://fraudshield-mbh2.onrender.com |
+| Frontend | Vercel (free tier) | https://fraudshield-susii.vercel.app |
 
 ---
 
