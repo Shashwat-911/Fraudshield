@@ -5,7 +5,7 @@
 
 | 🚀 **Live Web App** | ⚡ **API & Swagger Docs** | 🎥 **Video Demo Pitch** | 📊 **Track Focus** |
 | :---: | :---: | :---: | :---: |
-| **[fraudshield-susii.vercel.app](https://fraudshield-susii.vercel.app)** | **[fraudshield-mbh2.onrender.com/docs](https://fraudshield-mbh2.onrender.com/docs)** | **[Watch Pitch Demo](#)** | **AI Risk Manager** |
+| **[fraudshield-susii.vercel.app](https://fraudshield-susii.vercel.app)** | **[fraudshield-mbh2.onrender.com/docs](https://fraudshield-mbh2.onrender.com/docs)** | **[Watch Pitch Demo](https://drive.google.com/file/d/16CKC0m5vM-6O4tczIRfJIkGqxOOY-MbI/view?usp=sharing)** | **AI Risk Manager** |
 
 ---
 
